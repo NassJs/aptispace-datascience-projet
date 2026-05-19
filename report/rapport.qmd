@@ -38,12 +38,22 @@ link-citations: true
 *À rédiger par les étudiants : Présentez ici le contexte global de votre projet, la problématique métier que vous cherchez à résoudre, les questions scientifiques soulevées et les opportunités d'aide à la décision sur la base de vos données.*
 
 ## Contexte du Projet
-*À rédiger par les étudiants — Pistes de réflexion :*
-- *Quels sont les objectifs globaux et le domaine d'étude de votre projet ?*
-- *En quoi ce sujet de recherche est-il pertinent et stratégique ?*
-- *Pourquoi l'analyse quantitative de ce jeu de données est-elle indispensable pour répondre à votre problématique ?*
 
-[Rédiger votre paragraphe de contexte ici]
+**Quels sont les objectifs globaux et le domaine d'étude de votre projet ?**
+
+Ce projet s'inscrit dans le domaine de l'**éducation augmentée par l'intelligence artificielle**. L'objectif global est d'analyser les comportements et les performances de 50 000 étudiants issus de cinq filières académiques (
+STEM, Business, Humanités, Médecine, Arts) dans leur rapport à l'IA générative au cours d'un semestre. Il s'agit d'établir un **profil moyen de l'étudiant contemporain** qui intègre l'IA dans ses pratiques d'apprentissage, en croisant des indicateurs de performance académique (GPA), d'usage de l'IA (heures hebdomadaires, cas d'usage, niveau de maîtrise des prompts) et de bien-être (anxiété, risque de burnout, dépendance perçue).
+
+**En quoi ce sujet de recherche est-il pertinent et stratégique ?**
+
+L'intégration massive des outils d'IA générative dans les cursus universitaires constitue un tournant majeur pour l'enseignement supérieur. 
+Comprendre si et comment l'IA améliore réellement les performances académiques — ou au contraire génère de la dépendance et du burnout — est une question stratégique pour les établissements, 
+les enseignants et les décideurs politiques. Ce dataset, qui couvre des contextes institutionnels variés (interdiction stricte, autorisation avec citation, encouragement actif), 
+permet d'évaluer l'efficacité des différentes politiques adoptées face à l'essor des outils comme ChatGPT ou GitHub Copilot. La pertinence de ce sujet est renforcée par l'absence de consensus scientifique actuel sur l'impact réel de l'IA sur l'apprentissage à long terme.
+
+**Pourquoi l'analyse quantitative de ce jeu de données est-elle indispensable pour répondre à votre problématique ?**
+
+Face à la diversité des profils étudiants et des contextes d'usage, seule une approche quantitative portant sur un large échantillon (50 000 observations, 16 variables) permet de dégager des tendances robustes et généralisables. L'analyse statistique et les modèles prédictifs permettent de mesurer précisément l'impact de chaque facteur (heures d'utilisation, politique institutionnelle, niveau de compétence en prompt engineering) sur les deux variables cibles : le **GPA post-semestriel** et le **niveau de risque de burnout**. Sans cette rigueur quantitative, il serait impossible de distinguer les effets bénéfiques de l'IA des effets néfastes, ni d'identifier les profils d'étudiants les plus vulnérables.
 
 ## Objectif Analytique
 *À rédiger par les étudiants — Pistes de réflexion :*
