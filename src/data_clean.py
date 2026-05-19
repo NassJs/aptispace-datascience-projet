@@ -85,3 +85,23 @@ def save_clean_data(df, path):
     """
     df.to_csv(path, index=False)
     return path
+
+def feature_engineering(df):
+    """
+    Crée de nouvelles variables dérivées.
+    """
+
+    df_copy = df.copy()
+
+    # Exemple de nouvelles variables
+    if 'Weekly_GenAI_Hours' in df_copy.columns:
+        df_copy['AI_Usage_Level'] = (
+            df_copy['Weekly_GenAI_Hours'] > 10
+        ).astype(int)
+
+    if 'Pre_Semester_GPA' in df_copy.columns:
+        df_copy['GPA_Squared'] = (
+            df_copy['Pre_Semester_GPA'] ** 2
+        )
+
+    return df_copy
