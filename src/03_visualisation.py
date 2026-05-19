@@ -22,23 +22,22 @@ uv.set_custom_style(theme='light')
 print("Librairies de visualisation prêtes !")
 
 
-df = pd.read_csv('../data/processed/cleaned_data_sample.csv')
-df['timestamp'] = pd.to_datetime(df['timestamp'])
-df_feat = dc.feature_engineering(df, 'timestamp')
-df_feat.head()
+df = pd.read_csv('../data/processed/ai_student_cleaned.csv')
+
+# Le dataset "ai_student_cleaned" ne contient pas de colonne temporelle :
+# on saute donc l'étape pd.to_datetime() et dc.feature_engineering().
+print(f"Dimensions : {df.shape}")
+df.head()
 
 
-# TODO: Appeler uv.plot_generic_trends() pour tracer l'évolution temporelle
-fig1 = uv.plot_generic_trends(df_feat, 'timestamp', 'value', group_col='category')
-plt.show()
+# A. Distribution univariée d'une variable clé : GPA post-semestre
+uv.plot_histogram(df, "Post_Semester_GPA")
 
 
-# TODO: Appeler uv.plot_correlation_matrix() pour les colonnes d'intérêt
-fig2 = uv.plot_correlation_matrix(df_feat, ['value', 'hour', 'dayofweek'])
-plt.show()
+# B. Carte de chaleur des corrélations sur l'ensemble des colonnes numériques
+uv.plot_correlation_matrix(df)
 
 
-# TODO: Tracer un nuage de points heure vs valeur avec coloration
-fig3 = uv.plot_bivariate_scatter(df_feat, 'hour', 'value', color_col='dayofweek')
-plt.show()
+# C. Comparaison bivariée : GPA post-semestre selon la filière
+uv.plot_boxplot(df, x="Major_Category", y="Post_Semester_GPA")
 
