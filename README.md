@@ -1,6 +1,5 @@
 # Mon Projet Data Science
-Étudiant(e) 1 : \[Insérer Prénom Nom\], Étudiant(e) 2 : \[Insérer Prénom
-Nom\], Étudiant(e) 3 : \[Insérer Prénom Nom\]
+Étudiant(e) 1 DEFLANDRE NASSIM, Étudiante 2 Barakissa Kone Yasmine
 2026-05-20
 
 - [Introduction et Contexte Métier](#sec-intro)
@@ -54,6 +53,8 @@ Nom\], Étudiant(e) 3 : \[Insérer Prénom Nom\]
 
 # Introduction et Contexte Métier
 
+[![](https://github.com/nassJs/aptispace-datascience-projet/actions/workflows/ci.yml/badge.svg)](https://github.com/nassJs/aptispace-datascience-projet/actions/workflows/ci.yml)
+
 *À rédiger par les étudiants : Présentez ici le contexte global de votre
 projet, la problématique métier que vous cherchez à résoudre, les
 questions scientifiques soulevées et les opportunités d’aide à la
@@ -61,15 +62,49 @@ décision sur la base de vos données.*
 
 ## Contexte du Projet
 
-*À rédiger par les étudiants — Pistes de réflexion :*
+**Quels sont les objectifs globaux et le domaine d’étude de votre projet
+?**
 
-- *Quels sont les objectifs globaux et le domaine d’étude de votre
-  projet ?*
-- *En quoi ce sujet de recherche est-il pertinent et stratégique ?*
-- *Pourquoi l’analyse quantitative de ce jeu de données est-elle
-  indispensable pour répondre à votre problématique ?*
+Ce projet s’inscrit dans le domaine de l’**éducation augmentée par
+l’intelligence artificielle**. L’objectif global est d’analyser les
+comportements et les performances de 50 000 étudiants issus de cinq
+filières académiques ( STEM, Business, Humanités, Médecine, Arts) dans
+leur rapport à l’IA générative au cours d’un semestre. Il s’agit
+d’établir un **profil moyen de l’étudiant contemporain** qui intègre
+l’IA dans ses pratiques d’apprentissage, en croisant des indicateurs de
+performance académique (GPA), d’usage de l’IA (heures hebdomadaires, cas
+d’usage, niveau de maîtrise des prompts) et de bien-être (anxiété,
+risque de burnout, dépendance perçue).
 
-\[Rédiger votre paragraphe de contexte ici\]
+**En quoi ce sujet de recherche est-il pertinent et stratégique ?**
+
+L’intégration massive des outils d’IA générative dans les cursus
+universitaires constitue un tournant majeur pour l’enseignement
+supérieur. Comprendre si et comment l’IA améliore réellement les
+performances académiques — ou au contraire génère de la dépendance et du
+burnout — est une question stratégique pour les établissements, les
+enseignants et les décideurs politiques. Ce dataset, qui couvre des
+contextes institutionnels variés (interdiction stricte, autorisation
+avec citation, encouragement actif), permet d’évaluer l’efficacité des
+différentes politiques adoptées face à l’essor des outils comme ChatGPT
+ou GitHub Copilot. La pertinence de ce sujet est renforcée par l’absence
+de consensus scientifique actuel sur l’impact réel de l’IA sur
+l’apprentissage à long terme.
+
+**Pourquoi l’analyse quantitative de ce jeu de données est-elle
+indispensable pour répondre à votre problématique ?**
+
+Face à la diversité des profils étudiants et des contextes d’usage,
+seule une approche quantitative portant sur un large échantillon (50 000
+observations, 16 variables) permet de dégager des tendances robustes et
+généralisables. L’analyse statistique et les modèles prédictifs
+permettent de mesurer précisément l’impact de chaque facteur (heures
+d’utilisation, politique institutionnelle, niveau de compétence en
+prompt engineering) sur les deux variables cibles : le **GPA
+post-semestriel** et le **niveau de risque de burnout**. Sans cette
+rigueur quantitative, il serait impossible de distinguer les effets
+bénéfiques de l’IA des effets néfastes, ni d’identifier les profils
+d’étudiants les plus vulnérables.
 
 ## Objectif Analytique
 
@@ -189,20 +224,20 @@ tracé `src.utils_viz`.
 
 ### 3. Tracés et analyses graphiques
 
-#### A. Évolution des tendances dans le temps
+#### A. Distribution univariée
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Tracez les tendances globales à l’aide
-de la fonction `uv.plot_generic_trends`.
+**À COMPLÉTER PAR L’ÉTUDIANT :** Tracez la distribution d’une variable
+clé du dataset avec `uv.plot_histogram`.
 
 #### B. Carte de chaleur des corrélations
 
 **À COMPLÉTER PAR L’ÉTUDIANT :** Visualisez graphiquement les
 corrélations de Pearson à l’aide de `uv.plot_correlation_matrix`.
 
-#### C. Nuage de points bivarié
+#### C. Comparaison bivariée par catégorie
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Générez une analyse graphique bivariée
-en utilisant `uv.plot_bivariate_scatter`.
+**À COMPLÉTER PAR L’ÉTUDIANT :** Générez une analyse bivariée (variable
+numérique par catégorie) avec `uv.plot_boxplot`.
 
 ------------------------------------------------------------------------
 
@@ -447,8 +482,7 @@ projet.
 
 # Bibliographie
 
-<div id="refs" class="references csl-bib-body hanging-indent"
-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-pandas2020" class="csl-entry">
 
