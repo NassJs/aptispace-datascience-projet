@@ -13,9 +13,9 @@ tensorflow>=2.12.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 plotnine>=0.12.0
+plotly>=6.7.0
 
 # Outils de développement
 ipykernel
 jupyter
 quarto
-
