@@ -205,6 +205,68 @@ Plotly.newPlot('dynamic-chart', [{
 
 ---
 
+# Dashboard Interactif (Streamlit) {#sec-dashboard}
+
+En complément des analyses statiques présentées dans ce rapport, un **dashboard interactif** a été développé avec la librairie Streamlit. Il permet d'explorer dynamiquement les résultats sans nécessiter de compétences en programmation.
+
+## Contenu du Dashboard
+
+Le dashboard (`app.py`) présente les éléments suivants :
+
+- **KPIs globaux** : nombre d'étudiants analysés, nombre de variables, usage IA moyen hebdomadaire, GPA moyen post-semestriel
+- **Lecture rapide des résultats** : évolution du GPA entre début et fin de semestre, filière la plus exposée à l'IA, niveau de burnout le plus fréquent
+- **Visualisations** : distribution de l'usage IA, usage moyen par filière, relation burnout / usage IA, évolution du GPA avant/après semestre
+- **Indices de dépendance et diversité** : score moyen de dépendance perçue aux outils IA, nombre moyen d'outils IA utilisés
+- **Corrélations** : top 5 des variables les plus corrélées au GPA final
+- **Aperçu du dataset** brut (15 premières lignes)
+
+## Lancer le Dashboard
+
+### Prérequis
+
+```bash
+# Créer et activer l'environnement virtuel (première fois)
+python -m venv venv
+source venv/bin/activate        # macOS / Linux
+# venv\Scripts\activate         # Windows
+
+# Installer les dépendances
+pip install -r requirements.txt
+pip install streamlit
+```
+
+### Démarrage
+
+```bash
+# Depuis la racine du projet
+source venv/bin/activate
+streamlit run app.py
+```
+
+L'application s'ouvre automatiquement dans le navigateur à l'adresse :
+
+```
+http://localhost:8501
+```
+
+> **Note** : le fichier de données attendu est `data/raw/ai_student_.csv`. Si Streamlit affiche une erreur `FileNotFoundError`, vérifiez que ce fichier est bien présent à cet emplacement.
+
+## Aperçu de l'Architecture du Dashboard
+
+```
+app.py
+├── Configuration de la page (st.set_page_config)
+├── Chargement des données (pd.read_csv)
+├── Section KPIs (4 métriques clés)
+├── Section Executive Summary (GPA, filière, burnout)
+├── Section Visualisations (4 graphiques matplotlib)
+├── Section Dépendance IA (2 métriques)
+├── Section Corrélations (top 5 variables → GPA)
+└── Aperçu dataset (expander)
+```
+
+---
+
 # Utilisation de l'Intelligence Artificielle {#sec-ai}
 
 Dans une démarche de transparence scientifique et académique, cette section détaille la manière dont les outils d'Intelligence Artificielle (IA) générative ont été intégrés tout au long de la réalisation de ce projet.
