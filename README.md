@@ -1,59 +1,55 @@
 # Mon Projet Data Science
-Étudiant(e) 1 DEFLANDRE NASSIM, Étudiante 2 Barakissa Kone Yasmine
-2026-05-20
+Étudiant(e) 1 : \[Insérer Prénom Nom\], Étudiant(e) 2 : \[Insérer Prénom
+Nom\], Étudiant(e) 3 : \[Insérer Prénom Nom\]
+2026-05-18
 
 - [Introduction et Contexte Métier](#sec-intro)
   - [Contexte du Projet](#contexte-du-projet)
   - [Objectif Analytique](#objectif-analytique)
 - [Acquisition et Préparation des Données (Data
   Wrangling)](#sec-wrangling)
-  - [Chapitre 1 : Acquisition
-    Multi-Sources](#chapitre-1--acquisition-multi-sources)
-- [📥 Étape 1 : Acquisition des Données & Multi-Sources (Squelette
-  Étudiant)](#inbox_tray-étape-1--acquisition-des-données--multi-sources-squelette-étudiant)
-  - [Chapitre 2 : Nettoyage et Préparation
-    (Wrangling)](#chapitre-2--nettoyage-et-préparation-wrangling)
-- [🧹 Étape 2 : Préparation & Nettoyage de Données (Data Wrangling)
-  (Squelette
-  Étudiant)](#broom-étape-2--préparation--nettoyage-de-données-data-wrangling-squelette-étudiant)
-- [Visualisation Multidimensionnelle (Insights)](#sec-viz)
-  - [Chapitre 3 : Travaux Pratiques d’Exploration
-    Visuelle](#chapitre-3--travaux-pratiques-dexploration-visuelle)
-- [📊 Étape 4 : Visualisation Multidimensionnelle (Squelette
-  Étudiant)](#bar_chart-étape-4--visualisation-multidimensionnelle-squelette-étudiant)
+  - [Audit de Qualité](#audit-de-qualité)
+  - [Algorithme de Nettoyage](#algorithme-de-nettoyage)
+  - [Travaux Pratiques de Wrangling](#travaux-pratiques-de-wrangling)
+- [🧹 Jalon 1 : Data Wrangling & Nettoyage (Squelette
+  Étudiant)](#broom-jalon-1--data-wrangling--nettoyage-squelette-étudiant)
 - [Analyse Exploratoire des Données (EDA)](#sec-eda)
-  - [Chapitre 4 : Travaux Pratiques d’Exploration
-    (EDA)](#chapitre-4--travaux-pratiques-dexploration-eda)
-- [🔎 Étape 3 : Analyse Exploratoire des Données (EDA) (Squelette
-  Étudiant)](#mag_right-étape-3--analyse-exploratoire-des-données-eda-squelette-étudiant)
-- [Modélisation et Apprentissage](#sec-modelling)
-  - [Chapitre 5 : Travaux Pratiques de Modélisation (ML &
-    DL)](#chapitre-5--travaux-pratiques-de-modélisation-ml--dl)
-- [🧠 Étape 5 : Modélisation (Machine Learning & Deep Learning)
+  - [Statistiques Descriptives](#statistiques-descriptives)
+  - [Ingénierie de Variables (Feature
+    Engineering)](#ingénierie-de-variables-feature-engineering)
+  - [Travaux Pratiques d’Exploration Visuelle
+    (EDA)](#travaux-pratiques-dexploration-visuelle-eda)
+- [📊 Jalon 1 : Analyse Exploratoire des Données (EDA) & Visualisation
   (Squelette
-  Étudiant)](#brain-étape-5--modélisation-machine-learning--deep-learning-squelette-étudiant)
+  Étudiant)](#bar_chart-jalon-1--analyse-exploratoire-des-données-eda--visualisation-squelette-étudiant)
+- [Visualisation Multidimensionnelle (Insights)](#sec-viz)
+  - [Profils et Distributions
+    Caractéristiques](#profils-et-distributions-caractéristiques)
+  - [Corrélations Globales](#corrélations-globales)
+- [Modélisation et Apprentissage](#sec-modelling)
+  - [Schéma Global du Pipeline de
+    Données](#schéma-global-du-pipeline-de-données)
+  - [Modélisation Tabulaire (Machine
+    Learning)](#modélisation-tabulaire-machine-learning)
+- [🧠 Jalon 2 : Modélisation Prédictive & Apprentissage (Squelette
+  Étudiant)](#brain-jalon-2--modélisation-prédictive--apprentissage-squelette-étudiant)
+  - [Modélisation Vision / Deep Learning (Analyse d’Images ou
+    Signaux)](#modélisation-vision--deep-learning-analyse-dimages-ou-signaux)
+- [📷 Jalon 2 : Brique de Vision par Ordinateur (CNN & TensorFlow)
+  (Squelette
+  Étudiant)](#camera-jalon-2--brique-de-vision-par-ordinateur-cnn--tensorflow-squelette-étudiant)
 - [Évaluation Métrique et Validation](#sec-evaluation)
-  - [Chapitre 6 : Travaux Pratiques d’Évaluation &
-    Robustesse](#chapitre-6--travaux-pratiques-dévaluation--robustesse)
-- [🧪 Étape 6 : Évaluation Métrique & Robustesse (Squelette
-  Étudiant)](#test_tube-étape-6--évaluation-métrique--robustesse-squelette-étudiant)
+  - [Stratégie de Validation](#stratégie-de-validation)
+  - [Résultats et Interprétation](#résultats-et-interprétation)
 - [Data Storytelling et Communication](#sec-storytelling)
-  - [Chapitre 7 : Travaux Pratiques de
-    Storytelling](#chapitre-7--travaux-pratiques-de-storytelling)
-- [📢 Étape 7 : Data Storytelling & Communication (Squelette
-  Étudiant)](#loudspeaker-étape-7--data-storytelling--communication-squelette-étudiant)
-  - [Présentation des Résultats (Livrables
-    Interactifs)](#présentation-des-résultats-livrables-interactifs)
-- [Utilisation de l’Intelligence Artificielle](#sec-ai)
-  - [Cartographie de l’utilisation de
-    l’IA](#cartographie-de-lutilisation-de-lia)
-  - [Principes de Rigueur et
-    Responsabilité](#principes-de-rigueur-et-responsabilité)
+  - [Recommandations Stratégiques /
+    Métier](#recommandations-stratégiques--métier)
+  - [Limites et Perspectives](#limites-et-perspectives)
 - [Bibliographie](#bibliographie)
 
 # Introduction et Contexte Métier
 
-[![](https://github.com/nassJs/aptispace-datascience-projet/actions/workflows/ci.yml/badge.svg)](https://github.com/nassJs/aptispace-datascience-projet/actions/workflows/ci.yml)
+[![](https://github.com/aptitek/aptispace-datascience-projet/actions/workflows/ci.yml/badge.svg)](https://github.com/aptitek/aptispace-datascience-projet/actions/workflows/ci.yml)
 
 *À rédiger par les étudiants : Présentez ici le contexte global de votre
 projet, la problématique métier que vous cherchez à résoudre, les
@@ -62,61 +58,23 @@ décision sur la base de vos données.*
 
 ## Contexte du Projet
 
-**Quels sont les objectifs globaux et le domaine d’étude de votre projet
-?**
+*À rédiger par les étudiants — Pistes de réflexion :* - *Quels sont les
+objectifs globaux et le domaine d’étude de votre projet ?* - *En quoi ce
+sujet de recherche est-il pertinent et stratégique ?* - *Pourquoi
+l’analyse quantitative de ce jeu de données est-elle indispensable pour
+répondre à votre problématique ?*
 
-Ce projet s’inscrit dans le domaine de l’**éducation augmentée par
-l’intelligence artificielle**. L’objectif global est d’analyser les
-comportements et les performances de 50 000 étudiants issus de cinq
-filières académiques ( STEM, Business, Humanités, Médecine, Arts) dans
-leur rapport à l’IA générative au cours d’un semestre. Il s’agit
-d’établir un **profil moyen de l’étudiant contemporain** qui intègre
-l’IA dans ses pratiques d’apprentissage, en croisant des indicateurs de
-performance académique (GPA), d’usage de l’IA (heures hebdomadaires, cas
-d’usage, niveau de maîtrise des prompts) et de bien-être (anxiété,
-risque de burnout, dépendance perçue).
-
-**En quoi ce sujet de recherche est-il pertinent et stratégique ?**
-
-L’intégration massive des outils d’IA générative dans les cursus
-universitaires constitue un tournant majeur pour l’enseignement
-supérieur. Comprendre si et comment l’IA améliore réellement les
-performances académiques — ou au contraire génère de la dépendance et du
-burnout — est une question stratégique pour les établissements, les
-enseignants et les décideurs politiques. Ce dataset, qui couvre des
-contextes institutionnels variés (interdiction stricte, autorisation
-avec citation, encouragement actif), permet d’évaluer l’efficacité des
-différentes politiques adoptées face à l’essor des outils comme ChatGPT
-ou GitHub Copilot. La pertinence de ce sujet est renforcée par l’absence
-de consensus scientifique actuel sur l’impact réel de l’IA sur
-l’apprentissage à long terme.
-
-**Pourquoi l’analyse quantitative de ce jeu de données est-elle
-indispensable pour répondre à votre problématique ?**
-
-Face à la diversité des profils étudiants et des contextes d’usage,
-seule une approche quantitative portant sur un large échantillon (50 000
-observations, 16 variables) permet de dégager des tendances robustes et
-généralisables. L’analyse statistique et les modèles prédictifs
-permettent de mesurer précisément l’impact de chaque facteur (heures
-d’utilisation, politique institutionnelle, niveau de compétence en
-prompt engineering) sur les deux variables cibles : le **GPA
-post-semestriel** et le **niveau de risque de burnout**. Sans cette
-rigueur quantitative, il serait impossible de distinguer les effets
-bénéfiques de l’IA des effets néfastes, ni d’identifier les profils
-d’étudiants les plus vulnérables.
+\[Rédiger votre paragraphe de contexte ici\]
 
 ## Objectif Analytique
 
-*À rédiger par les étudiants — Pistes de réflexion :*
-
-- *Quelles sont les variables cibles principales et la tâche globale de
-  modélisation (classification, régression, clustering, etc.) ?*
-- *Comment le couplage de données multi-sources et l’intégration de
-  différents types de données (tabulaires, images, signaux, etc.)
-  enrichissent-ils l’analyse ?*
-- *Quels sont les livrables analytiques attendus pour répondre à votre
-  problématique et guider les prises de décisions ?*
+*À rédiger par les étudiants — Pistes de réflexion :* - *Quelles sont
+les variables cibles principales et la tâche globale de modélisation
+(classification, régression, clustering, etc.) ?* - *Comment le couplage
+de données multi-sources et l’intégration de différents types de données
+(tabulaires, images, signaux, etc.) enrichissent-ils l’analyse ?* -
+*Quels sont les livrables analytiques attendus pour répondre à votre
+problématique et guider les prises de décisions ?*
 
 \[Rédiger votre paragraphe d’objectifs ici\]
 
@@ -129,115 +87,66 @@ préparation des données ([McKinney 2020](#ref-pandas2020)). Cette
 section documente l’audit de qualité et les étapes de nettoyage
 appliquées à vos jeux de données bruts.
 
-## Chapitre 1 : Acquisition Multi-Sources
+## Audit de Qualité
 
-# 📥 Étape 1 : Acquisition des Données & Multi-Sources (Squelette Étudiant)
+*À rédiger par les étudiants : Présentez un audit critique complet de
+vos fichiers de données brutes. Indiquez la liste des anomalies
+physiques et typologiques détectées (formats de dates hétérogènes,
+outliers physiques, taux de valeurs manquantes, etc.).*
 
-Cette étape correspond au premier chapitre du pipeline de Data Science.
-L’objectif est d’identifier, d’importer et de consolider vos jeux de
-données bruts issus de différentes sources (fichiers CSV locaux,
-requêtes API, bases de données, etc.).
+\[Rédiger votre audit de données ici\]
 
-### 1. Initialisation de l’environnement
+## Algorithme de Nettoyage
 
-### 2. Chargement de la source de données principale
+*À rédiger par les étudiants : Justifiez et détaillez l’enchaînement de
+vos opérations de traitement (uniformisation des dates, masquage des
+outliers, imputation, etc.). Faites référence aux fonctions
+correspondantes de votre module `src/data_clean.py`.*
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Chargez votre jeu de données principal
-(par exemple un fichier CSV stocké dans `data/raw/`).
+\[Rédiger la justification méthodologique ici\]
 
-### 3. Intégration de données secondaires (Multi-Sources)
+## Travaux Pratiques de Wrangling
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Mettez en place la récupération de vos
-données complémentaires (par exemple, appels d’API fictifs ou réels,
-données météo, géographiques, ou financiers complémentaires).
+# 🧹 Jalon 1 : Data Wrangling & Nettoyage (Squelette Étudiant)
 
-### 4. Fusion des sources (Optionnel)
+Ce notebook correspond à la première étape du **Jalon 1**. L’objectif
+est d’importer le jeu de données brut (`data/raw/raw_data_sample.csv`),
+d’effectuer un audit de sa qualité (données manquantes, anomalies
+physiques, formats de dates hétérogènes) et de le nettoyer à l’aide de
+votre package personnalisé `src.data_clean`.
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Associez vos différentes sources de
-données en utilisant des jointures (`pd.merge`) pertinentes.
+### 1. Importation des packages et chargement des données
 
-### 5. Consignation des données d’entrée brutes
+### 2. Audit initial des données
 
-Sauvegardez l’état brut de vos données d’entrée pour la suite du
-pipeline.
+**À faire par l’étudiant :** Explorez le dataset brut pour évaluer sa
+structure : - Quelles sont les dimensions du dataset ? - Quels sont les
+types de données par colonne ? - Reste-t-il des valeurs nulles ? Quel
+est le taux de valeurs manquantes par variable ? - Y a-t-il des doublons
+?
 
-## Chapitre 2 : Nettoyage et Préparation (Wrangling)
+### 3. Nettoyage et uniformisation des Dates
 
-# 🧹 Étape 2 : Préparation & Nettoyage de Données (Data Wrangling) (Squelette Étudiant)
+**À faire par l’étudiant :** Appliquez la fonction `clean_dates` de
+votre module `src.data_clean` pour convertir la colonne `timestamp` en
+type Datetime uniforme.
 
-Cette étape correspond au deuxième chapitre du projet. L’objectif est
-d’effectuer un audit de qualité de vos données brutes, puis de mettre en
-œuvre un nettoyage rigoureux à l’aide de votre package personnalisé
-`src.data_clean`.
+### 4. Identification et Traitement des Outliers (Anomalies physiques)
 
-### 1. Initialisation et imports
-
-### 2. Chargement du dataset brut et Audit Initial
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Chargez les données brutes et inspectez
-la qualité du dataset (taux de valeurs manquantes, présence de doublons,
-types erronés).
-
-### 3. Uniformisation des Formats de Dates
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Uniformisez la colonne temporelle pour
-la convertir dans un type datetime standardisé via votre module
-`src.data_clean`.
-
-### 4. Identification et Filtrage des Valeurs Aberrantes (Outliers)
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Identifiez les anomalies physiques et
-utilisez votre fonction `dc.handle_outliers` pour transformer ces
-valeurs aberrantes en NaNs.
+**À faire par l’étudiant :** Analysez les valeurs de la colonne `value`
+et appliquez votre fonction `handle_outliers` pour filtrer les valeurs
+physiques aberrantes (inférieures à 0 ou supérieures à 100).
 
 ### 5. Imputation des valeurs manquantes
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Appliquez des stratégies d’imputation
-adaptées (interpolation temporelle, médiane, etc.) sur les valeurs
-manquantes générées ou initiales.
+**À faire par l’étudiant :** Appliquez la fonction
+`impute_missing_values` pour remplir les NaNs issus du chargement
+initial ou du nettoyage des anomalies.
 
 ### 6. Sauvegarde des données propres
 
-Enregistrez vos données de base nettoyées dans le répertoire
-`data/processed/`.
-
-------------------------------------------------------------------------
-
-# Visualisation Multidimensionnelle (Insights)
-
-Nous présentons ici les résultats visuels clés permettant de dégager des
-insights exploitables pour les décideurs, en s’appuyant sur notre module
-`src/utils_viz.py`.
-
-## Chapitre 3 : Travaux Pratiques d’Exploration Visuelle
-
-# 📊 Étape 4 : Visualisation Multidimensionnelle (Squelette Étudiant)
-
-Cette étape correspond au quatrième chapitre du cours. L’objectif est de
-concevoir des représentations visuelles premium pour identifier des
-tendances et insights clés à l’aide de votre package personnalisé de
-tracé `src.utils_viz`.
-
-### 1. Préparation de l’environnement
-
-### 2. Chargement du dataset enrichi
-
-### 3. Tracés et analyses graphiques
-
-#### A. Distribution univariée
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Tracez la distribution d’une variable
-clé du dataset avec `uv.plot_histogram`.
-
-#### B. Carte de chaleur des corrélations
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Visualisez graphiquement les
-corrélations de Pearson à l’aide de `uv.plot_correlation_matrix`.
-
-#### C. Comparaison bivariée par catégorie
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Générez une analyse bivariée (variable
-numérique par catégorie) avec `uv.plot_boxplot`.
+Enregistrez votre DataFrame nettoyé dans
+`data/processed/cleaned_data_sample.csv`.
 
 ------------------------------------------------------------------------
 
@@ -247,39 +156,105 @@ Dans cette section, nous analysons les relations statistiques
 fondamentales qui régissent votre domaine d’étude au sein du jeu de
 données.
 
-## Chapitre 4 : Travaux Pratiques d’Exploration (EDA)
+## Statistiques Descriptives
 
-# 🔎 Étape 3 : Analyse Exploratoire des Données (EDA) (Squelette Étudiant)
+*À rédiger par les étudiants : Présentez une vue d’ensemble descriptive
+rapide de vos variables nettoyées.*
 
-Cette étape correspond au troisième chapitre du cours. L’objectif est
-d’explorer et de résumer les propriétés statistiques fondamentales de
-vos données et de réaliser du **Feature Engineering** pour enrichir vos
-modèles.
+\[Rédiger les statistiques descriptives ici\]
 
-### 1. Préparation de l’environnement
+## Ingénierie de Variables (Feature Engineering)
 
-### 2. Chargement des données nettoyées
+*À rédiger par les étudiants : Expliquez l’intérêt mathématique et
+l’impact sur les modèles prédictifs d’extraire des caractéristiques
+dérivées (ex: variables cycliques temporelles, ratios financiers, ratios
+physiques, etc.).*
 
-### 3. Statistiques Descriptives
+\[Rédiger votre explication de l’ingénierie de variables ici\]
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Générez les résumés statistiques
-globaux et par groupes/catégories de votre jeu de données.
+## Travaux Pratiques d’Exploration Visuelle (EDA)
 
-### 4. Ingénierie de variables (Feature Engineering)
+# 📊 Jalon 1 : Analyse Exploratoire des Données (EDA) & Visualisation (Squelette Étudiant)
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Appliquez la fonction
-`feature_engineering` de `src.data_clean` pour extraire des indicateurs
-temporels de base, et ajoutez d’autres variables dérivées complexes
-adaptées à votre problématique.
+Ce notebook est dédié à la découverte de relations clés et à l’analyse
+visuelle de nos données. À partir du jeu de données propre généré
+précédemment, nous allons enrichir nos variables explicatives et appeler
+les fonctions de notre module de visualisation `src.utils_viz` pour
+générer des graphiques professionnels.
 
-### 5. Analyse des Corrélations
+### 1. Importation des packages et configuration du style
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Analysez la matrice des corrélations
-des caractéristiques numériques à l’aide de Pandas.
+### 2. Ingénierie de variables temporelles
+
+**À faire par l’étudiant :** Appliquez la fonction `feature_engineering`
+de `src.data_clean` pour enrichir votre DataFrame en caractéristiques de
+temps classiques (heures, jours de la semaine).
+
+### 3. Visualisations Professionnelles
+
+#### A. Profils d’évolution et tendances
+
+**À faire par l’étudiant :** Appliquez la fonction `plot_generic_trends`
+de votre module `src.utils_viz` pour tracer l’évolution de la valeur par
+rapport au temps.
+
+#### B. Matrice de corrélation multi-variables
+
+**À faire par l’étudiant :** Appliquez la fonction
+`plot_correlation_matrix` de votre module `src.utils_viz` pour calculer
+et afficher graphiquement la carte thermique des corrélations sur les
+colonnes `['value', 'hour', 'dayofweek']`.
+
+#### C. Nuage de points bivarié
+
+**À faire par l’étudiant :** Générez un nuage de points de la relation
+heure vs valeur en colorant les points selon la variable `dayofweek`, en
+utilisant votre fonction `plot_bivariate_scatter`.
+
+### 4. Synthèse des observations clés
+
+Sur la base de vos figures, listez les **insights majeurs** observés sur
+le comportement de vos variables.
+
+------------------------------------------------------------------------
+
+# Visualisation Multidimensionnelle (Insights)
+
+Nous présentons ici les résultats visuels clés permettant de dégager des
+insights exploitables pour les décideurs, en s’appuyant sur notre module
+`src/utils_viz.py`.
+
+*À rédiger par les étudiants : Présentez et commentez en détail vos 3 à
+5 insights majeurs découverts lors de l’exploration descriptive
+visuelle. Intégrez et justifiez les figures clés générées.*
+
+## Profils et Distributions Caractéristiques
+
+``` python
+#| label: fig-distribution-density
+#| fig-cap: "Distribution ou profils caractéristiques de vos variables clés."
+#| echo: false
+# TODO: Utiliser vos fonctions personnalisées de votre module pour tracer la figure
+```
+
+\[Commenter la figure et décrire vos observations ici\]
+
+## Corrélations Globales
+
+``` python
+#| label: fig-correlation
+#| fig-cap: "Matrice de corrélation de Spearman ou de Pearson entre variables."
+#| echo: false
+# TODO: Utiliser uv.plot_correlation_matrix() de votre module pour tracer la figure
+```
+
+\[Commenter la figure et décrire vos observations ici\]
 
 ------------------------------------------------------------------------
 
 # Modélisation et Apprentissage
+
+## Schéma Global du Pipeline de Données
 
 Le pipeline complet intègre à la fois la branche analytique tabulaire
 (Machine Learning) et la branche d’analyse visuelle ou de signaux
@@ -302,181 +277,144 @@ graph TD
     style I fill:#fef3c7,stroke:#d97706,stroke-width:2px
 ```
 
-## Chapitre 5 : Travaux Pratiques de Modélisation (ML & DL)
+## Modélisation Tabulaire (Machine Learning)
 
-# 🧠 Étape 5 : Modélisation (Machine Learning & Deep Learning) (Squelette Étudiant)
+*À rédiger par les étudiants : Expliquez le choix de vos algorithmes
+d’apprentissage (supervisé ou non supervisé) et décrivez l’importance
+des variables explicatives.*
 
-Cette étape correspond au cinquième chapitre du cours. L’objectif est
-d’implémenter d’une part un modèle de Machine Learning tabulaire (ex:
-RandomForest) et d’autre part un réseau de neurones convolutif (CNN)
-sous TensorFlow pour traiter des images ou signaux complexes.
+\[Détailler votre modélisation ici\]
+
+### Travaux Pratiques de Modélisation Tabulaire
+
+# 🧠 Jalon 2 : Modélisation Prédictive & Apprentissage (Squelette Étudiant)
+
+Dans ce notebook du **Jalon 2**, l’objectif est d’implémenter un
+pipeline complet d’apprentissage supervisé pour prédire une variable
+cible (`value`) à l’aide de Scikit-Learn.
+
+Vous devrez mettre en œuvre une stratégie de découpage train/test
+chronologique pour respecter la causalité temporelle.
 
 ### 1. Préparation de l’environnement
 
-### 2. Modélisation Tabulaire (Machine Learning)
+### 2. Définition des variables et split chronologique
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Entraînez un modèle d’apprentissage
-supervisé (ex: forêt aléatoire) sur les caractéristiques extraites de
-votre jeu de données.
+**À faire par l’étudiant :** - Identifiez vos colonnes prédictives
+(`features`) et la colonne cible (`value`). - Séparez chronologiquement
+vos données en ensembles d’entraînement (`Train`) et de test (`Test`).
+N’utilisez pas de split aléatoire !
 
-### 3. Modélisation Vision / Deep Learning (CNN & TensorFlow)
+### 3. Entraînement du modèle de Forêt Aléatoire
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Pour des motifs complexes
-(images/signaux), mettez en place un réseau convolutif (Conv2D, Pooling,
-Dense) pour classifier ou enrichir vos prédictions.
+**À faire par l’étudiant :** - Instanciez et entraînez un modèle
+`RandomForestRegressor`. - Générez les prédictions `y_pred` sur
+l’ensemble de test.
+
+### 4. Évaluation métrique
+
+**À faire par l’étudiant :** Calculez et affichez les scores
+d’évaluation requis : - **MAE** (Mean Absolute Error) - **RMSE** (Root
+Mean Squared Error) - **R²** (Coefficient de détermination)
+
+### 5. Importance des variables explicatives
+
+**À faire par l’étudiant :** Extrayez et affichez l’importance relative
+de chaque caractéristique prédictive.
+
+## Modélisation Vision / Deep Learning (Analyse d’Images ou Signaux)
+
+*À rédiger par les étudiants : Expliquez l’intérêt de la brique de Deep
+Learning (images, signaux ou traitement de données structurées
+complexes) pour classifier ou enrichir vos prédictions. Détaillez
+l’architecture de votre réseau de neurones convolutif (CNN) conçu sous
+TensorFlow/Keras (conv, pooling, dense, dropout, activation) et
+commentez les courbes d’apprentissage obtenues.*
+
+\[Détailler votre architecture CNN et analyse ici\]
+
+### Travaux Pratiques de Vision par Ordinateur (CNN)
+
+# 📷 Jalon 2 : Brique de Vision par Ordinateur (CNN & TensorFlow) (Squelette Étudiant)
+
+Ce notebook est dédié à la brique d’analyse d’images du **Jalon 2**.
+L’objectif est de concevoir un Réseau de Neurones Convolutif (CNN) sous
+TensorFlow/Keras pour classifier des motifs géométriques simples (Classe
+0: Cercle vs Classe 1: Multiples Rectangles).
+
+### 1. Préparation de l’environnement
+
+### 2. Génération du jeu d’images synthétiques
+
+Pour travailler de manière autonome sans importer de lourdes bases
+d’images externes, cette fonction utilitaire génère des images simulées
+en $64 \times 64$ pixels de formes simples (Cercle vs Rectangles).
+
+### 3. Split d’évaluation (Entraînement / Validation)
+
+**À faire par l’étudiant :** Divisez vos données d’images `X_images` et
+`y_labels` en $80\%$ pour l’entraînement et $20\%$ pour la validation.
+
+### 4. Conception de l’architecture du CNN
+
+**À faire par l’étudiant :** Instanciez un réseau convolutif séquentiel
+Keras comprenant des couches `Conv2D`, `MaxPooling2D`, `Flatten`,
+`Dense` et un `Dropout` pour classifier nos deux formes géométriques.
+
+### 5. Compilation et Entraînement
+
+**À faire par l’étudiant :** - Compilez le modèle avec l’optimiseur
+`'adam'` et la fonction de perte binaire. - Entraînez votre CNN sur
+environ 5 époques.
 
 ------------------------------------------------------------------------
 
 # Évaluation Métrique et Validation
 
-## Chapitre 6 : Travaux Pratiques d’Évaluation & Robustesse
+## Stratégie de Validation
 
-# 🧪 Étape 6 : Évaluation Métrique & Robustesse (Squelette Étudiant)
+*À rédiger par les étudiants : Expliquez pourquoi le découpage
+d’évaluation choisi (ex: validation temporelle, stratifiée ou par
+groupe) est adapté à la structure de vos données pour éviter les fuites
+de données.*
 
-Cette étape correspond au sixième chapitre du cours. L’objectif est de
-mettre en place un protocole d’évaluation rigoureux (splits d’évaluation
-adaptés) et de calculer les métriques clés de performance pour valider
-scientifiquement la qualité de vos modèles.
+\[Rédiger la section de validation ici\]
 
-### 1. Préparation de l’environnement
+## Résultats et Interprétation
 
-### 2. Évaluation du modèle Tabulaire
+*À rédiger par les étudiants : Complétez le tableau d’évaluation
+ci-dessous en reportant vos résultats de modélisation.*
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Calculez et interprétez les métriques
-d’erreur sur vos prédictions (MAE, RMSE, R²).
+| Modèle | Métrique 1 (ex: MAE / Précision) | Métrique 2 (ex: RMSE / F1-Score) | R² / Score (%) |
+|----|----|----|----|
+| Baseline (ex: Naïve / Moyenne) | \[À compléter\] | \[À compléter\] | \[À compléter\] |
+| **Modèle Choisi** | **\[À compléter\]** | **\[À compléter\]** | **\[À compléter\]** |
 
-### 3. Protocole de Validation Croisée (Out-of-Fold / Chronologique)
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Décrivez et codez (ou documentez) une
-stratégie de validation croisée adaptée au comportement temporel de vos
-données pour valider la robustesse de votre modèle sans fuite
-d’information.
+\[Interpréter et comparer les métriques d’erreur calculées ici\]
 
 ------------------------------------------------------------------------
 
 # Data Storytelling et Communication
 
-## Chapitre 7 : Travaux Pratiques de Storytelling
+## Recommandations Stratégiques / Métier
 
-# 📢 Étape 7 : Data Storytelling & Communication (Squelette Étudiant)
+*À rédiger par les étudiants : Formulez des recommandations
+stratégiques, opérationnelles et innovantes basées sur vos découvertes
+analytiques et prédictives pour guider les décideurs.*
 
-Cette étape correspond au septième et dernier chapitre de data science.
-L’objectif est de synthétiser vos résultats pour des profils métiers ou
-décideurs et de proposer des visualisations interactives ou dynamiques
-pour valoriser vos conclusions.
+\[Rédiger vos recommandations ici\]
 
-### 1. Préparation de l’environnement
+## Limites et Perspectives
 
-### 2. Synthèse métier et Storytelling
+*À rédiger par les étudiants : Identifiez honnêtement les biais ou
+limites de votre approche et proposez des pistes d’amélioration futures
+(ex: intégration de données externes réelles, modélisation plus
+poussée).*
 
-**À COMPLÉTER PAR L’ÉTUDIANT :** Traduisez vos métriques techniques en
-impacts stratégiques (par exemple, gains financiers, réduction de coûts,
-amélioration de la sécurité, etc.).
+\[Rédiger les limites et perspectives ici\]
 
-### 3. Visualisation Interactive (Plotly)
-
-**À COMPLÉTER PAR L’ÉTUDIANT :** Générez un graphique interactif (par
-exemple en utilisant Plotly ou des éléments OJS dans le document final)
-pour permettre aux décideurs d’interagir dynamiquement avec vos données.
-
-## Présentation des Résultats (Livrables Interactifs)
-
-<div class="panel-tabset">
-
-### 📺 Diaporama de Soutenance (RevealJS)
-
-Ci-dessous est intégré le squelette de votre diaporama de soutenance
-RevealJS. Utilisez-le pour présenter votre démarche aux décideurs de
-façon professionnelle.
-
-<iframe src="slides.html" width="100%" height="500px" style="border: 1px solid #e2e8f0; border-radius: 8px; background: white;">
-
-</iframe>
-
-### 📊 Exemple de Dashboard Dynamique (OJS / Plotly)
-
-Voici un exemple minimal de code montrant comment intégrer un graphique
-dynamique contrôlé par un composant d’interface utilisateur en
-Observable JS (OJS).
-
-``` {ojs}
-//| echo: true
-// Boutons de sélection interactifs OJS
-viewof selectedCategory = Inputs.select(["Toutes", "A", "B", "C"], {value: "Toutes", label: "Filtrer par Catégorie :"})
-```
-
-``` {ojs}
-//| echo: false
-// Données simulées réactives
-data = [
-  {timestamp: "2026-05-18T00:00:00Z", value: 10.5, category: "A"},
-  {timestamp: "2026-05-18T02:00:00Z", value: 12.1, category: "A"},
-  {timestamp: "2026-05-18T04:00:00Z", value: 14.7, category: "A"},
-  {timestamp: "2026-05-18T05:00:00Z", value: 15.2, category: "A"},
-  {timestamp: "2026-05-18T06:00:00Z", value: 16.0, category: "B"},
-  {timestamp: "2026-05-18T07:00:00Z", value: 18.3, category: "B"},
-  {timestamp: "2026-05-18T09:00:00Z", value: 21.5, category: "B"},
-  {timestamp: "2026-05-18T10:00:00Z", value: 22.0, category: "B"},
-  {timestamp: "2026-05-18T12:00:00Z", value: 25.4, category: "C"},
-  {timestamp: "2026-05-18T13:00:00Z", value: 26.1, category: "C"},
-  {timestamp: "2026-05-18T15:00:00Z", value: 28.9, category: "C"},
-  {timestamp: "2026-05-18T16:00:00Z", value: 30.2, category: "C"}
-]
-
-// Filtrage réactif de la donnée
-filteredData = selectedCategory === "Toutes" 
-  ? data 
-  : data.filter(d => d.category === selectedCategory)
-
-// Tracé interactif avec la librairie Plotly
-Plotly.newPlot('dynamic-chart', [{
-  x: filteredData.map(d => d.timestamp),
-  y: filteredData.map(d => d.value),
-  type: 'scatter',
-  mode: 'lines+markers',
-  marker: {color: '#1A73E8', size: 8},
-  line: {shape: 'spline', color: '#1A73E8', width: 3}
-}], {
-  title: 'Évolution Dynamique des Valeurs (Filtrée)',
-  margin: {t: 50, b: 50, l: 50, r: 50},
-  paper_bgcolor: 'rgba(0,0,0,0)',
-  plot_bgcolor: 'rgba(0,0,0,0)',
-  xaxis: {gridcolor: '#E5E7EB'},
-  yaxis: {gridcolor: '#E5E7EB'}
-})
-```
-
-<div id="dynamic-chart"
-style="width:100%; height:400px; background: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-
-</div>
-
-</div>
-
-------------------------------------------------------------------------
-
-# Utilisation de l’Intelligence Artificielle
-
-Dans une démarche de transparence scientifique et académique, cette
-section détaille la manière dont les outils d’Intelligence Artificielle
-(IA) générative ont été intégrés tout au long de la réalisation de ce
-projet.
-
-## Cartographie de l’utilisation de l’IA
-
-| Outil d’IA | Cas d’usage (Pourquoi ?) | Méthode d’utilisation (Comment ?) | Rôle et Validation Humaine |
-|:---|:---|:---|:---|
-| **\[Outil d’IA\]** | *\[À compléter par les étudiants\]* | *\[À compléter par les étudiants\]* | *\[À compléter par les étudiants\]* |
-
-## Principes de Rigueur et Responsabilité
-
-1.  **Responsabilité intellectuelle** : L’équipe assume l’entière
-    responsabilité des analyses, des choix de modèles et des conclusions
-    présentées dans ce rapport.
-2.  **Lutte contre les hallucinations** : Chaque suggestion technique a
-    fait l’objet d’une validation empirique.
-3.  **Protection des données** : Aucun jeu de données confidentiel ou
-    sensible n’a été soumis à des modèles tiers en ligne.
+Ce document dynamique a été compilé en Quarto ([Team
+2024](#ref-quarto2024)).
 
 ------------------------------------------------------------------------
 
@@ -488,6 +426,14 @@ projet.
 
 McKinney, Wes. 2020. *Python for Data Analysis: Data Wrangling with
 Pandas, NumPy, and IPython*. O’Reilly Media.
+
+</div>
+
+<div id="ref-quarto2024" class="csl-entry">
+
+Team, Quarto Development. 2024. “Quarto Dynamic Publishing System:
+Collaborative Scientific and Technical Publishing.”
+<https://quarto.org/>.
 
 </div>
 

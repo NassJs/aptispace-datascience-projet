@@ -88,20 +88,17 @@ def save_clean_data(df, path):
 
 def feature_engineering(df):
     """
-    Crée de nouvelles variables dérivées.
+    Crée quelques variables dérivées simples.
     """
 
     df_copy = df.copy()
 
-    # Exemple de nouvelles variables
+    # Exemple : moyenne de stress et d'heures IA
     if 'Weekly_GenAI_Hours' in df_copy.columns:
-        df_copy['AI_Usage_Level'] = (
-            df_copy['Weekly_GenAI_Hours'] > 10
-        ).astype(int)
-
-    if 'Pre_Semester_GPA' in df_copy.columns:
-        df_copy['GPA_Squared'] = (
-            df_copy['Pre_Semester_GPA'] ** 2
+        df_copy['AI_Usage_Level'] = pd.cut(
+            df_copy['Weekly_GenAI_Hours'],
+            bins=[0, 5, 15, 100],
+            labels=['Faible', 'Moyen', 'Élevé']
         )
 
     return df_copy

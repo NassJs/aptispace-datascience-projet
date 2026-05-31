@@ -1,3 +1,10 @@
+import os, sys
+sys.path.append('/home/aptitek/Documents/Aptispace/datascience/lab/projet')
+
+# Installation automatique des dépendances requises dans le noyau Jupyter actuel
+# %pip install -r ../requirements.txt
+
+
 import os
 import sys
 import pandas as pd
@@ -7,66 +14,33 @@ import numpy as np
 sys.path.append(os.path.abspath('..'))
 from src import data_clean as dc
 
-# Configuration de l'affichage pandas pour une meilleure lisibilité
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 200)
+print("Librairies prêtes pour le Wrangling !")
 
-print(f"Librairies prêtes pour le Wrangling ! (pandas {pd.__version__}, numpy {np.__version__})")
 
-# ---------------------------------------------------------------------------
-# 1. Chargement du dataset enrichi issu de l'étape 01_acquisition
-# ---------------------------------------------------------------------------
-raw_data_path = '../data/raw/ai_student_enriched.csv'
-if not os.path.exists(raw_data_path):
-    # Fallback sur le brut non enrichi si l'étape 01 n'a pas été exécutée
-    raw_data_path = '../data/raw/ai_student_.csv'
+raw_data_path = '../data/raw/raw_data_sample.csv'
 df_raw = dc.load_raw_data(raw_data_path)
 
-# ---------------------------------------------------------------------------
-# 2. Audit rapide : structure, valeurs manquantes, doublons
-# ---------------------------------------------------------------------------
-print("\n--- Audit du dataset ---")
+# TODO: Effectuer un audit rapide avec .info(), .isnull().sum() et .duplicated().sum()
 df_raw.info()
-print("\nValeurs manquantes par colonne :")
-print(df_raw.isnull().sum())
-print(f"\nDoublons : {df_raw.duplicated().sum()}")
 
-# ---------------------------------------------------------------------------
-# 3. Nettoyage des dates : non applicable
-#    Le dataset ai_student_ ne contient aucune colonne temporelle.
-# ---------------------------------------------------------------------------
-df_clean = df_raw.copy()
-print("\nAucune colonne temporelle à convertir — étape clean_dates ignorée.")
 
-# ---------------------------------------------------------------------------
-# 4. Traitement des outliers sur les colonnes numériques clés
-#    - GPA (Pre / Post) : intervalle plausible [0.0, 4.0]
-#    - Skill_Retention_Score : intervalle plausible [0.0, 100.0]
-#    - Weekly_GenAI_Hours : intervalle plausible [0.0, 60.0]
-# ---------------------------------------------------------------------------
-df_no_outliers = dc.handle_outliers(df_clean, ['Pre_Semester_GPA', 'Post_Semester_GPA'], 0.0, 4.0)
-df_no_outliers = dc.handle_outliers(df_no_outliers, ['Skill_Retention_Score'], 0.0, 100.0)
-df_no_outliers = dc.handle_outliers(df_no_outliers, ['Weekly_GenAI_Hours'], 0.0, 60.0)
+# TODO: Appeler votre fonction dc.clean_dates() sur la colonne correspondante
+df_clean = dc.clean_dates(df_raw, 'timestamp')
+df_clean.head()
 
-print("\n--- Résumé statistique après traitement des outliers ---")
-print(df_no_outliers[['Pre_Semester_GPA', 'Post_Semester_GPA',
-                      'Skill_Retention_Score', 'Weekly_GenAI_Hours']].describe())
 
-# ---------------------------------------------------------------------------
-# 5. Imputation des valeurs manquantes éventuellement créées par handle_outliers
-# ---------------------------------------------------------------------------
-cols_to_impute = ['Pre_Semester_GPA', 'Post_Semester_GPA',
-                  'Skill_Retention_Score', 'Weekly_GenAI_Hours']
-df_final = dc.impute_missing_values(df_no_outliers, cols_to_impute, 'median')
+# TODO: Utiliser dc.handle_outliers() avec les seuils minimum et maximum plausibles
+df_no_outliers = dc.handle_outliers(df_clean, ['value'], 0.0, 100.0)
+df_no_outliers.describe()
 
-print("\nValeurs manquantes restantes après imputation :")
-print(df_final.isnull().sum().sum(), "au total.")
 
-# ---------------------------------------------------------------------------
-# 6. Sauvegarde du dataset nettoyé
-# ---------------------------------------------------------------------------
-os.makedirs('../data/processed', exist_ok=True)
-processed_path = '../data/processed/ai_student_cleaned.csv'
+# TODO: Appliquer dc.impute_missing_values() avec la méthode de votre choix
+df_final = dc.impute_missing_values(df_no_outliers, ['value'], 'interpolate')
+print("Anomalies restantes après imputation :", df_final.isnull().sum())
+
+
+processed_path = '../data/processed/cleaned_data_sample.csv'
+# TODO: Sauvegarder avec df.to_csv()
 df_final.to_csv(processed_path, index=False)
-print(f"\nDonnées propres sauvegardées dans : {processed_path}")
-print(f"Dimensions finales : {df_final.shape}")
+print(f"💾 Données propres sauvegardées dans : {processed_path}")
+

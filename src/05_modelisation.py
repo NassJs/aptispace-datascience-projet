@@ -1,3 +1,10 @@
+import os, sys
+sys.path.append('/home/aptitek/Documents/Aptispace/datascience/lab/projet')
+
+# Installation automatique des dépendances requises dans le noyau Jupyter actuel
+# %pip install -r ../requirements.txt
+
+
 import os
 import sys
 import pandas as pd
@@ -14,50 +21,22 @@ print("Librairies de modélisation importées avec succès !")
 print("Version TensorFlow :", tf.__version__)
 
 
-# Chargement des données nettoyées et feature engineering
-df = pd.read_csv('../data/processed/ai_student_cleaned.csv')
-df_feat = dc.feature_engineering(df)
-print(f"Dimensions : {df_feat.shape}")
+# Chargement des données propres et ingénierie des caractéristiques
+df = pd.read_csv('../data/processed/cleaned_data_sample.csv')
+df['timestamp'] = pd.to_datetime(df['timestamp'])
+df_feat = dc.feature_engineering(df, 'timestamp')
 
-# Cible : GPA post-semestre (régression supervisée)
-target = "Post_Semester_GPA"
+features = ['hour', 'dayofweek']
+target = 'value'
 
-features = [
-    "Pre_Semester_GPA",
-    "Weekly_GenAI_Hours",
-    "Traditional_Study_Hours",
-    "Tool_Diversity",
-    "Perceived_AI_Dependency",
-    "Anxiety_Level_During_Exams",
-    "Skill_Retention_Score",
-    "Secteur_IA_Adoption_Rate",
-    "Avg_Salary_Index",
-    "Recommended_Study_Hours_Week",
-    "AI_Usage_Level",
-    "GPA_Squared",
-]
+# Split chronologique simple pour l'entraînement
+X_train = df_feat[features].iloc[:-4]
+y_train = df_feat[target].iloc[:-4]
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import root_mean_squared_error, r2_score
-
-X = df_feat[features]
-y = df_feat[target]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-print(f"Train : {X_train.shape[0]} lignes | Test : {X_test.shape[0]} lignes")
-
-# Entraînement du RandomForest
-rf_model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+# TODO: Instancier et entraîner RandomForestRegressor sur (X_train, y_train)
+rf_model = RandomForestRegressor(n_estimators=10, random_state=42)
 rf_model.fit(X_train, y_train)
-
-# Évaluation
-y_pred = rf_model.predict(X_test)
-print(f"\nRMSE test : {root_mean_squared_error(y_test, y_pred):.4f}")
-print(f"R²   test : {r2_score(y_test, y_pred):.4f}")
-
-# Importance des variables
-importances = pd.Series(rf_model.feature_importances_, index=features).sort_values(ascending=False)
-print("\nImportance des variables :")
-print(importances.round(3))
+print("Modèle de forêt aléatoire entraîné !")
 
 
 # Génération fictive d'un jeu d'images simples (64x64 pixels) de cercles (Classe 0) vs rectangles (Classe 1)
@@ -82,7 +61,7 @@ y_img_train = y_labels[:split]
 print(f"Dataset d'images brutes généré. Dimensions Train : {X_img_train.shape}")
 
 
-# Architecture CNN
+# TODO: Définir l'architecture séquentielle du CNN avec layers.Conv2D et layers.MaxPooling2D
 cnn_model = models.Sequential([
     layers.Conv2D(16, (3, 3), activation='relu', input_shape=(64, 64, 3)),
     layers.MaxPooling2D((2, 2)),
@@ -94,7 +73,8 @@ cnn_model = models.Sequential([
 cnn_model.summary()
 
 
-# Entraînement CNN
+# TODO: Compiler et entraîner le CNN avec l'optimiseur adam et une binary_crossentropy
 cnn_model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 cnn_model.fit(X_img_train, y_img_train, epochs=2, batch_size=32, verbose=1)
 print("CNN entraîné avec succès !")
+

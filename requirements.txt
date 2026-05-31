@@ -1,21 +1,47 @@
-# Pandas & Manipulation de données
+# =========================
+# DATA MANIPULATION
+# =========================
 pandas>=2.0.0
 numpy>=1.24.0
 
-# Acquisition de données
-kagglehub>=0.3.0
-
-# Machine Learning & Deep Learning
+# =========================
+# MACHINE LEARNING
+# =========================
 scikit-learn>=1.2.0
-tensorflow>=2.12.0
 
-# Visualisation graphique
+# =========================
+# DEEP LEARNING / COMPUTER VISION
+# =========================
+tensorflow>=2.12.0
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+
+# =========================
+# DATA VISUALIZATION
+# =========================
 matplotlib>=3.7.0
 seaborn>=0.12.0
+plotly>=5.18.0
 plotnine>=0.12.0
-plotly>=6.7.0
 
-# Outils de développement
-ipykernel
+# =========================
+# WEB APP / DASHBOARD
+# =========================
+streamlit>=1.30.0
+
+# =========================
+# PDF GENERATION
+# =========================
+reportlab>=4.0.0
+
+# =========================
+# ENVIRONMENT VARIABLES
+# =========================
+python-dotenv>=1.0.0
+
+# =========================
+# NOTEBOOKS & DEVELOPMENT
+# =========================
 jupyter
+ipykernel
 quarto

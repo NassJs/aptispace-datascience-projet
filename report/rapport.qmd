@@ -1,11 +1,10 @@
 ---
-title: "Impact de l'IA Générative sur les Étudiants"
-subtitle: "Projet Fil Rouge Data Science — Analyse de performance, dépendance et burnout"
+title: "Mon Projet Data Science"
+subtitle: "Projet Fil Rouge Data Science - Sujet Libre"
 author:
-  - "Étudiant(e) 1 DEFLANDRE NASSIM"
-  - "Étudiante 2 Barakissa Kone Yasmine"
-   
-  # Remplacer par vos noms et votre numéro de groupe
+  - "Étudiant(e) 1 : [Insérer Prénom Nom]"
+  - "Étudiant(e) 2 : [Insérer Prénom Nom]"
+  - "Étudiant(e) 3 : [Insérer Prénom Nom]"
 date: today
 format:
   html:
@@ -33,39 +32,25 @@ link-citations: true
 
 # Introduction et Contexte Métier {#sec-intro}
 
-[![CI Compilation Pipeline](https://github.com/nassJs/aptispace-datascience-projet/actions/workflows/ci.yml/badge.svg)](https://github.com/nassJs/aptispace-datascience-projet/actions/workflows/ci.yml)
+*À rédiger par les étudiants : Présentez ici le contexte global de votre projet, la problématique métier que vous cherchez à résoudre, les questions scientifiques soulevées et les opportunités d'aide à la décision sur la base de vos données.*
 
 ## Contexte du Projet
+*À rédiger par les étudiants — Pistes de réflexion :*
 
-**Quels sont les objectifs globaux et le domaine d'étude de votre projet ?**
+- *Quels sont les objectifs globaux et le domaine d'étude de votre projet ?*
+- *En quoi ce sujet de recherche est-il pertinent et stratégique ?*
+- *Pourquoi l'analyse quantitative de ce jeu de données est-elle indispensable pour répondre à votre problématique ?*
 
-Ce projet s'inscrit dans le domaine de l'**éducation augmentée par l'intelligence artificielle**. L'objectif global est d'analyser les comportements et les performances de 50 000 étudiants issus de cinq filières académiques (
-STEM, Business, Humanités, Médecine, Arts) dans leur rapport à l'IA générative au cours d'un semestre. Il s'agit d'établir un **profil moyen de l'étudiant contemporain** qui intègre l'IA dans ses pratiques d'apprentissage, en croisant des indicateurs de performance académique (GPA), d'usage de l'IA (heures hebdomadaires, cas d'usage, niveau de maîtrise des prompts) et de bien-être (anxiété, risque de burnout, dépendance perçue).
-
-**En quoi ce sujet de recherche est-il pertinent et stratégique ?**
-
-L'intégration massive des outils d'IA générative dans les cursus universitaires constitue un tournant majeur pour l'enseignement supérieur. 
-Comprendre si et comment l'IA améliore réellement les performances académiques — ou au contraire génère de la dépendance et du burnout — est une question stratégique pour les établissements, 
-les enseignants et les décideurs politiques. Ce dataset, qui couvre des contextes institutionnels variés (interdiction stricte, autorisation avec citation, encouragement actif), 
-permet d'évaluer l'efficacité des différentes politiques adoptées face à l'essor des outils comme ChatGPT ou GitHub Copilot. La pertinence de ce sujet est renforcée par l'absence de consensus scientifique actuel sur l'impact réel de l'IA sur l'apprentissage à long terme.
-
-**Pourquoi l'analyse quantitative de ce jeu de données est-elle indispensable pour répondre à votre problématique ?**
-
-Face à la diversité des profils étudiants et des contextes d'usage, seule une approche quantitative portant sur un large échantillon (50 000 observations, 16 variables) permet de dégager des tendances robustes et généralisables. L'analyse statistique et les modèles prédictifs permettent de mesurer précisément l'impact de chaque facteur (heures d'utilisation, politique institutionnelle, niveau de compétence en prompt engineering) sur les deux variables cibles : le **GPA post-semestriel** et le **niveau de risque de burnout**. Sans cette rigueur quantitative, il serait impossible de distinguer les effets bénéfiques de l'IA des effets néfastes, ni d'identifier les profils d'étudiants les plus vulnérables.
+[Rédiger votre paragraphe de contexte ici]
 
 ## Objectif Analytique
+*À rédiger par les étudiants — Pistes de réflexion :*
 
-Ce projet poursuit deux tâches de modélisation complémentaires :
+- *Quelles sont les variables cibles principales et la tâche globale de modélisation (classification, régression, clustering, etc.) ?*
+- *Comment le couplage de données multi-sources et l'intégration de différents types de données (tabulaires, images, signaux, etc.) enrichissent-ils l'analyse ?*
+- *Quels sont les livrables analytiques attendus pour répondre à votre problématique et guider les prises de décisions ?*
 
-1. **Régression supervisée** — prédire le GPA post-semestriel (`Post_Semester_GPA`) à partir des comportements d'usage de l'IA et des caractéristiques académiques de l'étudiant. Le modèle principal retenu est un **Random Forest Regressor** (100 estimateurs), évalué via RMSE et R².
-
-2. **Classification supervisée** — prédire le niveau de risque de burnout (`Burnout_Risk_Level` : Low / Medium / High) en exploitant les mêmes variables explicatives, évalué via F1-score macro et accuracy.
-
-Les variables explicatives retenues couvrent trois dimensions : **usage de l'IA** (heures hebdomadaires, diversité des outils, niveau de maîtrise des prompts, dépendance perçue), **habitudes d'étude** (heures d'étude traditionnelles, rétention des acquis, politique institutionnelle) et **bien-être** (anxiété aux examens, GPA pré-semestre).
-
-Le jeu de données (50 000 observations, 16 variables brutes) est enrichi lors du feature engineering par des variables dérivées clés : `AI_Usage_Level` (catégorisation de l'intensité d'usage IA), `GPA_Squared` (terme quadratique pour capturer les effets non-linéaires), ainsi que des indicateurs sectoriels externes (`Secteur_IA_Adoption_Rate`, `Avg_Salary_Index`).
-
-Les livrables analytiques sont : un modèle de prédiction du GPA mobilisable pour l'orientation académique, un modèle de détection précoce du burnout, et un dashboard interactif Streamlit permettant aux établissements d'identifier les profils d'étudiants à risque et d'évaluer l'efficacité de leurs politiques d'encadrement de l'IA.
+[Rédiger votre paragraphe d'objectifs ici]
 
 ---
 
@@ -147,7 +132,6 @@ Ci-dessous est intégré le squelette de votre diaporama de soutenance RevealJS.
 <iframe src="slides.html" width="100%" height="500px" style="border: 1px solid #e2e8f0; border-radius: 8px; background: white;"></iframe>
 
 ### 📊 Exemple de Dashboard Dynamique (OJS / Plotly)
-::: {.content-visible unless-format="pdf"}
 Voici un exemple minimal de code montrant comment intégrer un graphique dynamique contrôlé par un composant d'interface utilisateur en Observable JS (OJS).
 
 ```{ojs}
@@ -197,73 +181,9 @@ Plotly.newPlot('dynamic-chart', [{
 })
 ```
 
-::: {#dynamic-chart style="width:100%; height:400px; background: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"}
-:::
-:::
+<div id="dynamic-chart" style="width:100%; height:400px; background: white; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);"></div>
 
 :::
-
----
-
-# Dashboard Interactif (Streamlit) {#sec-dashboard}
-
-En complément des analyses statiques présentées dans ce rapport, un **dashboard interactif** a été développé avec la librairie Streamlit. Il permet d'explorer dynamiquement les résultats sans nécessiter de compétences en programmation.
-
-## Contenu du Dashboard
-
-Le dashboard (`app.py`) présente les éléments suivants :
-
-- **KPIs globaux** : nombre d'étudiants analysés, nombre de variables, usage IA moyen hebdomadaire, GPA moyen post-semestriel
-- **Lecture rapide des résultats** : évolution du GPA entre début et fin de semestre, filière la plus exposée à l'IA, niveau de burnout le plus fréquent
-- **Visualisations** : distribution de l'usage IA, usage moyen par filière, relation burnout / usage IA, évolution du GPA avant/après semestre
-- **Indices de dépendance et diversité** : score moyen de dépendance perçue aux outils IA, nombre moyen d'outils IA utilisés
-- **Corrélations** : top 5 des variables les plus corrélées au GPA final
-- **Aperçu du dataset** brut (15 premières lignes)
-
-## Lancer le Dashboard
-
-### Prérequis
-
-```bash
-# Créer et activer l'environnement virtuel (première fois)
-python -m venv venv
-source venv/bin/activate        # macOS / Linux
-# venv\Scripts\activate         # Windows
-
-# Installer les dépendances
-pip install -r requirements.txt
-pip install streamlit
-```
-
-### Démarrage
-
-```bash
-# Depuis la racine du projet
-source venv/bin/activate
-streamlit run app.py
-```
-
-L'application s'ouvre automatiquement dans le navigateur à l'adresse :
-
-```
-http://localhost:8501
-```
-
-> **Note** : le fichier de données attendu est `data/raw/ai_student_.csv`. Si Streamlit affiche une erreur `FileNotFoundError`, vérifiez que ce fichier est bien présent à cet emplacement.
-
-## Aperçu de l'Architecture du Dashboard
-
-```
-app.py
-├── Configuration de la page (st.set_page_config)
-├── Chargement des données (pd.read_csv)
-├── Section KPIs (4 métriques clés)
-├── Section Executive Summary (GPA, filière, burnout)
-├── Section Visualisations (4 graphiques matplotlib)
-├── Section Dépendance IA (2 métriques)
-├── Section Corrélations (top 5 variables → GPA)
-└── Aperçu dataset (expander)
-```
 
 ---
 
@@ -275,8 +195,7 @@ Dans une démarche de transparence scientifique et académique, cette section d�
 
 | Outil d'IA | Cas d'usage (Pourquoi ?) | Méthode d'utilisation (Comment ?) | Rôle et Validation Humaine |
 | :--- | :--- | :--- | :--- |
-| **Claude (Anthropic)** | Aide à la rédaction du rapport, structuration des sections analytiques aucun contenu intégré sans compréhension préalable
-
+| **[Outil d'IA]** | *[À compléter par les étudiants]* | *[À compléter par les étudiants]* | *[À compléter par les étudiants]* |
 
 ## Principes de Rigueur et Responsabilité
 
