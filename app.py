@@ -14,35 +14,35 @@ df = pd.read_csv("data/raw/ai_student_.csv")
 st.markdown("""
 <style>
 .main {
-    background-color: #0f172a;
+    background-color: #f3f4f6;
 }
 .block-container {
     padding-top: 2rem;
 }
 h1, h2, h3, p, div {
-    color: #e5e7eb;
+    color: #000000;
 }
 .metric-card {
-    background: linear-gradient(135deg, #1e293b, #111827);
+    background: linear-gradient(135deg, #e5e7eb, #d1d5db);
     padding: 20px;
     border-radius: 18px;
-    border: 1px solid #334155;
-    box-shadow: 0px 4px 18px rgba(0,0,0,0.3);
+    border: 1px solid #9ca3af;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.15);
 }
 .insight {
-    background-color: #111827;
+    background-color: #e5e7eb;
     padding: 18px;
     border-radius: 16px;
     border-left: 5px solid #38bdf8;
 }
 .warning-box {
-    background-color: #1f2937;
+    background-color: #e5e7eb;
     padding: 18px;
     border-radius: 16px;
     border-left: 5px solid #f59e0b;
 }
 .success-box {
-    background-color: #10291f;
+    background-color: #e5e7eb;
     padding: 18px;
     border-radius: 16px;
     border-left: 5px solid #22c55e;
